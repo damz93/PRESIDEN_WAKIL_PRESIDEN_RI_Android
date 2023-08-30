@@ -67,7 +67,7 @@
             android:paddingBottom="5dp"
             android:layout_gravity="top"
             android:orientation="vertical">
-
+<!--
                     <WebView
                         android:layout_marginTop="10dp"
                         android:layout_width="fill_parent"
@@ -75,6 +75,21 @@
                         android:layout_gravity="center_vertical|end"
                         android:text="bla blaaaaa"
                         android:textSize="16sp"
+                        android:textColor="#4A2222"
+                        android:background="#f4f4f4"
+                        android:id="@+id/txt_detail_presiden"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginRight="15dp"
+                        tools:ignore="WebViewLayout" />-->
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:text="bla blaaaaa"
+                        android:justificationMode="inter_word"
+                        android:textSize="18sp"
                         android:textColor="#4A2222"
                         android:background="#f4f4f4"
                         android:id="@+id/txt_detail_presiden"

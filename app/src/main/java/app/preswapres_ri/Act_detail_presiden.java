@@ -28,14 +28,14 @@ ImageView img_foto;
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.lay_detail_presiden);
         tx_nama = (TextView)findViewById(R.id.txt_nama_presiden);
-        //tx_detail = (TextView)findViewById(R.id.txt_detail_presiden);
-        wb_detail = (WebView) findViewById(R.id.txt_detail_presiden);
+        tx_detail = (TextView)findViewById(R.id.txt_detail_presiden);
+        //wb_detail = (WebView) findViewById(R.id.txt_detail_presiden);
         img_foto = (ImageView)findViewById(R.id.img_foto_presiden);
         Act_set_get ambil = new Act_set_get();
         tx_nama.setText(ambil.get_nama());
         s_nama = tx_nama.getText().toString();
-        //tx_detail.setText(ambil.get_detail());
-        wb_detail.loadData("<p style=\"text-align: justify\">"+ambil.get_detail()+"</p>","text/html", "UTF-8");
+        tx_detail.setText(ambil.get_detail());
+        //wb_detail.loadData("<p style=\"text-align:justify\">"+ambil.get_detail()+"</p>","text/html", "UTF-8");
         if (s_nama.equals("Ir. Soekarno")){
             img_foto.setImageResource(R.drawable.pres_soekarno);
         }
